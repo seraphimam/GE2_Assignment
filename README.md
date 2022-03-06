@@ -20,6 +20,6 @@ The scenes includes:
 **Break Point**\
 **Reinforcements**\
 **Final Assault**\
-**Battle Frontier**\
+**Battle Frontier**
 
 
