@@ -13,7 +13,7 @@ Spaceship battle
 ## **Storyboard**
 The story is the general of Blue Empire making his way from frontline base to the battlefield in frontline against the Red Kingdom\
 However, intel of this was intercepted and so the Red Kingdom sends out their Legions to kill the Blue General\
-The scenes includes:
+The scenes includes:\
 **Departure**\
 **Scout Encounter**\
 **Plan B**\
