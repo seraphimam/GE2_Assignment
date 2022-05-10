@@ -1,5 +1,4 @@
 # **GE2_Assignment**
-# **Simulation of humanoid walking**
 
 **Name:** Ming Chung Poon
 
