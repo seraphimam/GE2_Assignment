@@ -8,7 +8,7 @@ public class camera_follow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        focusTarget = GameObject.Find("blue_lead");
+        focusTarget = GameObject.Find("transport");
     }
 
     // Update is called once per frame

@@ -275,7 +275,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &92277760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,6 +299,108 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92277756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cab0cb501209df4e9bfa4e3aca05530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
+  mass: 1
+  damping: 0.01
+  banking: 0.1
+  maxSpeed: 10
+  maxForce: 20
+--- !u!1 &159684338 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1052965659895900538, guid: edf23adcd828e9045a3f60167c62f2f3, type: 3}
+  m_PrefabInstance: {fileID: 1286266130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &159684343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159684338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da754536c5ecf7b48a8f9738b2d15ed3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  leader: {fileID: 180649723}
+--- !u!114 &159684344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159684338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fef27d28379ba64798071e0232ee07e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  scale: 4
+  forwardFeelerDepth: 30
+  sideFeelerDepth: 30
+  frontFeelerUpdatesPerSecond: 20
+  sideFeelerUpdatesPerSecond: 20
+  feelerRadius: 2
+  forceType: 0
+  mask:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &159684345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159684338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe8333d560b18644a06c01c93faf9b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
+  slowingDistance: 15
+  decelleration: 10
+  targetGameObject: {fileID: 0}
+--- !u!114 &159684346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159684338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e8fb7fe459704146b99519886d874c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  targetGameObject: {fileID: 0}
+  target: {x: 0, y: 0, z: 0}
+--- !u!114 &159684347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159684338}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cab0cb501209df4e9bfa4e3aca05530, type: 3}
@@ -403,6 +505,112 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
+--- !u!1 &180649718 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1052965659895900538, guid: edf23adcd828e9045a3f60167c62f2f3, type: 3}
+  m_PrefabInstance: {fileID: 49792959}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &180649723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180649718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cab0cb501209df4e9bfa4e3aca05530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
+  mass: 1
+  damping: 0.01
+  banking: 0.1
+  maxSpeed: 10
+  maxForce: 20
+--- !u!114 &180649724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180649718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf93f10d028f6a44e9f9265a0826abf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  target: {fileID: 736597688}
+  scout: {fileID: 437380511}
+  initDistance: 0
+  distance: 0
+  detected: 0
+--- !u!114 &180649725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180649718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fef27d28379ba64798071e0232ee07e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  scale: 4
+  forwardFeelerDepth: 30
+  sideFeelerDepth: 30
+  frontFeelerUpdatesPerSecond: 20
+  sideFeelerUpdatesPerSecond: 20
+  feelerRadius: 2
+  forceType: 0
+  mask:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &180649726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180649718}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe8333d560b18644a06c01c93faf9b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
+  slowingDistance: 15
+  decelleration: 10
+  targetGameObject: {fileID: 0}
+--- !u!114 &180649727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180649718}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e8fb7fe459704146b99519886d874c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  targetGameObject: {fileID: 0}
+  target: {x: 0, y: 0, z: 0}
 --- !u!1 &252951844 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 909896894237664339, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
@@ -468,7 +676,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &252951848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -627,7 +835,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &433104007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -676,7 +884,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437380511}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: efe8333d560b18644a06c01c93faf9b2, type: 3}
   m_Name: 
@@ -695,7 +903,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437380511}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e8fb7fe459704146b99519886d874c6, type: 3}
   m_Name: 
@@ -725,6 +933,26 @@ MonoBehaviour:
   banking: 0.1
   maxSpeed: 10
   maxForce: 20
+--- !u!114 &437380515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437380511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82ada6ef33019774e82638342d2f897f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  targetGameObject: {fileID: 180649718}
+  enemyGameObject: {fileID: 736597679}
+  enemyDistance: 0
+  target: {x: 0, y: 0, z: 0}
+  detectionRadius: 300
 --- !u!1 &472874099 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 909896894237664339, guid: c484e9ee88e6f4942ad5c8a0461c6493, type: 3}
@@ -790,7 +1018,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &472874103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -857,6 +1085,108 @@ Transform:
   m_Father: {fileID: 172140500}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &566756243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1052965659895900538, guid: edf23adcd828e9045a3f60167c62f2f3, type: 3}
+  m_PrefabInstance: {fileID: 2002648284}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &566756248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566756243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da754536c5ecf7b48a8f9738b2d15ed3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  leader: {fileID: 180649723}
+--- !u!114 &566756249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566756243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fef27d28379ba64798071e0232ee07e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  scale: 4
+  forwardFeelerDepth: 30
+  sideFeelerDepth: 30
+  frontFeelerUpdatesPerSecond: 20
+  sideFeelerUpdatesPerSecond: 20
+  feelerRadius: 2
+  forceType: 0
+  mask:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &566756250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566756243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe8333d560b18644a06c01c93faf9b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
+  slowingDistance: 15
+  decelleration: 10
+  targetGameObject: {fileID: 0}
+--- !u!114 &566756251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566756243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e8fb7fe459704146b99519886d874c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  targetGameObject: {fileID: 0}
+  target: {x: 0, y: 0, z: 0}
+--- !u!114 &566756252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566756243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cab0cb501209df4e9bfa4e3aca05530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
+  mass: 1
+  damping: 0.01
+  banking: 0.1
+  maxSpeed: 10
+  maxForce: 20
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1971,7 +2301,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &1069899737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2225,7 +2555,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &1180682016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2471,7 +2801,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &1293987099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2776,7 +3106,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &1534792099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2973,7 +3303,7 @@ MonoBehaviour:
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
 --- !u!114 &1630699821
 MonoBehaviour:
   m_ObjectHideFlags: 0
