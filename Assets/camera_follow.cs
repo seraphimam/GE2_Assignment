@@ -14,7 +14,7 @@ public class camera_follow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = focusTarget.transform.position + new Vector3(0, 0, -1);
+        transform.position = focusTarget.transform.position + new Vector3(0, 15, -5);
         //transform.LookAt(focusTarget.transform);
         transform.rotation = Quaternion.Lerp(transform.rotation, focusTarget.transform.rotation, 0.1f);
     }
