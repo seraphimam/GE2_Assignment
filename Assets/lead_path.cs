@@ -32,7 +32,7 @@ public class lead_path : MonoBehaviour
             pathway.Clear();
         }
 
-            pathway.Add(init_point.transform);
+        pathway.Add(init_point.transform);
         
         foreach (Transform t in init_point.transform){
             pathway.Add(t);
@@ -59,7 +59,11 @@ public class lead_path : MonoBehaviour
         dist = (transform.position - target.position).magnitude;
 
         if(dist <= 0.5f){
-            target_waypoint_id = (target_waypoint_id + 1) % pathway.Count;
+            if(target_waypoint_id == pathway.Count - 1){
+                speed = 0;
+            }else{
+                target_waypoint_id = (target_waypoint_id + 1) % pathway.Count;
+            }
         }
     }
 }
